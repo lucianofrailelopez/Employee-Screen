@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./reset.css">
         <link rel="stylesheet" href="./style.css">
         <title>Employee</title>
     </head>
@@ -20,9 +21,15 @@
             <div class="employeeAccess">
                 <a href="#"><h2>Employees</h2></a>
             </div>
-            <a href="#"><h2>Client</h2></a>
-            <a href="#"><h2>Project</h2></a>
-            <a href="#"><h2>Reports</h2></a>
+            <div class="ContainerMenu">
+                <a href="#"><h2>Client</h2></a>
+            </div>
+            <div class="ContainerMenu">
+                <a href="#"><h2>Project</h2></a>
+            </div>
+            <div class="ContainerMenu">
+                <a href="#"><h2>Reports</h2></a>
+            </div>
         </nav>
         <main>
             <div class="container-search">
@@ -46,73 +53,40 @@
             <div class="table-wrapper">
                 <table>
                     <tr class="containerTh">
-                        <th><h4>Name</h4></th>
-                        <th><h4>Last Name</h4></th>
-                        <th><h4>Contract Type</h4></th>
-                        <th><h4>Role</h4></th>
-                        <th><h4>Age</h4></th>
-                        <th><h4>Date of Admission</h4></th>
-                        <th><h4>Email</h4></th>
-                        <th><h4>Date of birth</h4></th>
-                        <th><h4>Address</h4></th>
-                        <th><h4>City</h4></th>
-                        <th><h4>State</h4></th>
-                        <th><h4>Phone Number</h4></th>
-                        <th><h4>Civil Status</h4></th>
-                        <th><h4>Amount of Sons</h4></th>
-                        <th><h4>Medical Insurance</h4></th>
-                        <th><h4>Bank Name</h4></th>
-                        <th><h4>Bank Account Number</h4></th>
-                        <th><h4>Bank CBU Number</h4></th>
-                        <th><h4>Emergency Contact Name</h4></th>
-                        <th><h4>Emergency Contact Number</h4></th>
+                        <th class="entityName"><span>Name</span></th>
+                        <th><span>Last Name</span></th>
+                        <th><span>Contract Type</span></th>
+                        <th><span>Role</span></th>
+                        <th><span>Age</span></th>
+                        <th><span>Date of Admission</span></th>
+                        <th class="entityDate"></th>
                     </tr>
-                    <tr>
-                        <td><h5>Roberto</h5></td>
-                        <td><h5>Fontanarrosa</h5></td>
-                        <td><h5>Radium Rocket SAS</h5></td>
-                        <td><h5>Employee</h5></td>
-                        <td><h5>24</h5></td>
-                        <td><h5>20/02/2021</h5></td>
-                        <td><h5>robetorosa545@gmail.com</h5></td>
-                        <td><h5>09/08/1995</h5></td>
-                        <td><h5>Zeballos 2123</h5></td>
-                        <td><h5>Rosario</h5></td>
-                        <td><h5>Santa Fe</h5></td>
-                        <td><h5>341 336-5595</h5></td>
-                        <td><h5>Married</h5></td>
-                        <td><h5>0</h5></td>
-                        <td><h5>OSDE</h5></td>
-                        <td><h5>Galicia Bank</h5></td>
-                        <td><h5>3832827374</h5></td>
-                        <td><h5>282383828828283834</h5></td>
-                        <td><h5>Mirtha </h5></td>
-                        <td><h5>3415315678</h5></td>
+                    <tr class="containerDateTable">
+                        <td><span>Roberto</span></td>
+                        <td><span>Fontanarrosa</span></td>
+                        <td><span>Radium Rocket SAS</span></td>
+                        <td><span>Employee</span></td>
+                        <td><span>24</span></td>
+                        <td><span>20/02/2021</span></td>
+                        <td class="deleteEditIcon">
+                            <a href="#"><img src="./Icons/Captura de Pantalla 2022-08-04 a la(s) 15.42.58.png"></a>
+                            <a href="#"><img src="./Icons/Captura de Pantalla 2022-08-04 a la(s) 15.43.11.png"></a>
+                        </td>
                     </tr>
-                    <tr>
-                        <td><h5>German</h5></td>
-                        <td><h5>Dosko</h5></td>
-                        <td><h5>No contract</h5></td>
-                        <td><h5>Managment</h5></td>
-                        <td><h5>37</h5></td>
-                        <td><h5>01/11/2016</h5></td>
-                        <td><h5>german.dosko@gmail.com</h5></td>
-                        <td><h5>19/02/1985</h5></td>
-                        <td><h5>sarmiento 2035</h5></td>
-                        <td><h5>Rosario</h5></td>
-                        <td><h5>Santa Fe</h5></td>
-                        <td><h5>341 345-6789</h5></td>
-                        <td><h5>Married</h5></td>
-                        <td><h5>0</h5></td>
-                        <td><h5>OSDE</h5></td>
-                        <td><h5>Galicia Bank</h5></td>
-                        <td><h5>3832827374</h5></td>
-                        <td><h5>282383828828283834</h5></td>
-                        <td><h5>Edith</h5></td>
-                        <td><h5>3415314578</h5></td>
+                    <tr class="containerDateTable">
+                        <td><span>German</span></td>
+                        <td><span>Dosko</span></td>
+                        <td><span>No contract</span></td>
+                        <td><span>Managment</span></td>
+                        <td><span>37</span></td>
+                        <td><span>01/11/2016</span></td>
+                        <td class="deleteEditIcon">
+                            <a href="#"><img src="./Icons/Captura de Pantalla 2022-08-04 a la(s) 15.42.58.png"></a>
+                            <a href="#"><img src="./Icons/Captura de Pantalla 2022-08-04 a la(s) 15.43.11.png"></a>
+                        </td>
                     </tr>
                 </table>
-              </div>
+            </div>
         </main>
     </body>
 </html>
